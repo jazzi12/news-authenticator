@@ -1,5 +1,6 @@
 <?php
 function wikipediaQuery($searchValue){
+    $searchValue = str_replace(' ', '_', ucwords(trim(strtolower(htmlentities($searchValue, ENT_QUOTES)))));
     $url = 'https://en.wikipedia.org/w/api.php?format=json&action=query&prop=extracts&exintro=&explaintext=&titles='.$searchValue.'';
 
     $ch = curl_init();

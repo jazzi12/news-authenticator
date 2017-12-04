@@ -7,7 +7,7 @@ $results = [];
 if(!isset($_GET['searchValue'])) die();
 $searchValue = $_GET['searchValue'];
 
-$searchValue = str_replace(' ', '_', ucwords(trim(strtolower(htmlentities($searchValue, ENT_QUOTES)))));
+
 // echo json_encode($searchValue);
 
 $wikiResults = wikipediaQuery($searchValue);

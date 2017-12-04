@@ -30,14 +30,14 @@ require_once ('./inc/mostCommonWords.php');
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="index.php">News Authenticator</a>
+        <a class="navbar-brand" href="<?php $_SERVER['DOCUMENT_ROOT'] ?>">News Authenticator</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
-            <li class="active"><a href="index.php">Home <span class="sr-only">(current)</span></a></li>
-            <li><a href="./tests/tests.php">Tests</a></li>
+            <li class="active"><a href="<?php $_SERVER['DOCUMENT_ROOT'] ?>">Home <span class="sr-only">(current)</span></a></li>
+            <li><a href="<?php $_SERVER['DOCUMENT_ROOT'] ?>/tests/tests.php">Tests</a></li>
         </ul>
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
@@ -66,6 +66,7 @@ require_once ('./inc/mostCommonWords.php');
             
             echo '<h3 class="mainTitle">Title: '.$title.'</h3>';
             echo '<p class="mainExtract"><b>Extract:</b> '.$extract.'</p>'; ?>
+            <h4><a href="https://www.wikipedia.org/">All content comes from Wikipedia</a></h4>
         </div>
         
         <div class="col-md-4">
@@ -102,36 +103,18 @@ require_once ('./inc/mostCommonWords.php');
             <div class="col-sm-3">
                 <h5>Get started</h5>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Sign up</a></li>
-                    <li><a href="#">Downloads</a></li>
-                </ul>
-            </div>
-            <div class="col-sm-3">
-                <h5>About us</h5>
-                <ul>
-                    <li><a href="#">Company Information</a></li>
-                    <li><a href="#">Contact us</a></li>
-                    <li><a href="#">Reviews</a></li>
-                </ul>
-            </div>
-            <div class="col-sm-3">
-                <h5>Support</h5>
-                <ul>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">Help desk</a></li>
-                    <li><a href="#">Forums</a></li>
+                    <li><a href="<?php $_SERVER['DOCUMENT_ROOT'] ?>">Home</a></li>
                 </ul>
             </div>
             <div class="col-sm-3 info">
                 <h5>Information</h5>
-                <p> Lorem ipsum dolor amet, consectetur adipiscing elit. Etiam consectetur aliquet aliquet. Interdum et malesuada fames ac ante ipsum primis in faucibus. </p>
+                <p><a href="https://www.wikipedia.org/">Wikipedia</a></p>
             </div>
         </div>
     </div>
     <div class="second-bar">
         <div class="container">
-            <h2 class="logo"><a href="#"> News Authenticator </a></h2>
+            <h2 class="logo"><a href="<?php $_SERVER['DOCUMENT_ROOT'] ?>"> News Authenticator </a></h2>
             <div class="social-icons">
                 <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
                 <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
