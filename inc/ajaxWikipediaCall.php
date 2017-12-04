@@ -7,9 +7,6 @@ $results = [];
 if(!isset($_GET['searchValue'])) die();
 $searchValue = $_GET['searchValue'];
 
-
-// echo json_encode($searchValue);
-
 $wikiResults = wikipediaQuery($searchValue);
 $pageId = key($wikiResults['query']['pages']);
 $extract = $wikiResults['query']['pages'][$pageId]['extract'];
