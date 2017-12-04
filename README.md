@@ -7,6 +7,7 @@ News Authenticator Documentation
 4. Response
 5. Technical workflow
 
+
 1. Setup
 
 - Install web server and PHP or use XAMPP (for Windows) or MAMP (for Mac) which is easier
