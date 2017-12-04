@@ -15,7 +15,7 @@ require_once ('./inc/mostCommonWords.php');
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-<title></title>
+<title>News Authenticator</title>
 </head>
 <body>
 
@@ -30,14 +30,14 @@ require_once ('./inc/mostCommonWords.php');
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="<?php $_SERVER['DOCUMENT_ROOT'] ?>">News Authenticator</a>
+        <a class="navbar-brand" href="index.php">News Authenticator</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
-            <li class="active"><a href="<?php $_SERVER['DOCUMENT_ROOT'] ?>">Home <span class="sr-only">(current)</span></a></li>
-            <li><a href="<?php $_SERVER['DOCUMENT_ROOT'] ?>/tests/tests.php">Tests</a></li>
+            <li class="active"><a href="index.php">Home <span class="sr-only">(current)</span></a></li>
+            <li><a href="./tests/tests.php">Tests</a></li>
         </ul>
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
@@ -103,7 +103,7 @@ require_once ('./inc/mostCommonWords.php');
             <div class="col-sm-3">
                 <h5>Get started</h5>
                 <ul>
-                    <li><a href="<?php $_SERVER['DOCUMENT_ROOT'] ?>">Home</a></li>
+                    <li><a href="index.php">Home</a></li>
                 </ul>
             </div>
             <div class="col-sm-3 info">
@@ -114,7 +114,7 @@ require_once ('./inc/mostCommonWords.php');
     </div>
     <div class="second-bar">
         <div class="container">
-            <h2 class="logo"><a href="<?php $_SERVER['DOCUMENT_ROOT'] ?>"> News Authenticator </a></h2>
+            <h2 class="logo"><a href="index.php"> News Authenticator </a></h2>
             <div class="social-icons">
                 <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
                 <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
@@ -144,7 +144,7 @@ $('#wikipediaSearchForm').submit(function(e){
 
     $.ajax({
         type: 'GET',
-        url: '/inc/ajaxWikipediaCall.php',
+        url: 'inc/ajaxWikipediaCall.php',
         data: {searchValue: searchValue},
         success: function(response){
             $('.mainTitle').html('Title: ' + response.title)
